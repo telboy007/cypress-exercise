@@ -1,0 +1,26 @@
+{
+  "name": "cypress-exercise",
+  "version": "0.0.1",
+  "description": "Automation test exercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run e2e",
+    "test:headed": "npx cypress run e2e --headed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/telboy007/cypress-exercise.git"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "Terry Bonds",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/telboy007/cypress-exercise/issues"
+  },
+  "homepage": "https://github.com/telboy007/cypress-exercise#readme",
+  "dependencies": {
+    "cypress": "^12.15.0"
+  }
+}
