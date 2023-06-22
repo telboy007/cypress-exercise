@@ -5,17 +5,16 @@ describe('Check listed price of products', () => {
     cy.visit('/')
   })
 
-  it('product is priced correctly', () => {
+  const item1 = 'Sauce Labs Bolt T-Shirt'
+  const item2 = 'Sauce Labs Fleece Jacket'
+
+  it(`${item1} is priced correctly`, () => {
     cy.login(standard.username, standard.password)
-    const item = 'Sauce Labs Bolt T-Shirt'
-    // check the right price is being charged
-    cy.assert_product_price(item) // $15.99
+    cy.assert_product_price(item1) // $15.99
   })
 
-  it('product is priced correctly', () => {
+  it(`${item2} is priced correctly`, () => {
     cy.login(standard.username, standard.password)
-    const item = 'Sauce Labs Fleece Jacket'
-    // check the right price is being charged
-    cy.assert_product_price(item) // $49.99
+    cy.assert_product_price(item2) // $49.99
   })
 })
