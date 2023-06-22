@@ -1,6 +1,6 @@
 import standard from '../fixtures/standard_user.json'
 
-describe('End to end user purchase journey', () => {
+describe('Checkout validation checks', () => {
   beforeEach(() => {
     cy.visit('/')
   })
